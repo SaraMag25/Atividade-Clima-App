@@ -9,6 +9,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.example.atividade_clima_app.ui.components.PostScreen
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.json.JSONObject
@@ -23,6 +24,7 @@ class MainActivity : ComponentActivity() {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     TelaSara(modifier = Modifier.padding(innerPadding))
                 }
+
             }
         }
     }
@@ -64,5 +66,6 @@ fun TelaSara(modifier: Modifier = Modifier) {
                 }
             }
         }
+        PostScreen()
     }
 }
